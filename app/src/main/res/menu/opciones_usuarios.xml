@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/buscador"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Buscar"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/username"
+        android:icon="@drawable/ic_iniciar_sesion"
+        android:title="Username" />
+    <item
+        android:id="@+id/cerrar_sesion"
+        android:icon="@drawable/ic_cerrar_sesion"
+        android:title="@string/title_cerrar_sesion" />
+    <item
+        android:id="@+id/acerca_de"
+        android:icon="@drawable/ic_acerca_de"
+        android:title="@string/title_acerca" />
+</menu>

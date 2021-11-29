@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D9C0FD"
+    android:backgroundTint="#D9C0FD"
     tools:context=".MainActivity">
 
     <ProgressBar

@@ -3,8 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/drawable/ic_acerca_de.xml" value="0.23697916666666666" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/drawable/ic_admin_contenido.xml" value="0.19814814814814816" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/drawable/ic_admin_usuarios.xml" value="0.19814814814814816" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/drawable/ic_cerrar_sesion.xml" value="0.19814814814814816" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_menu.xml" value="0.22083333333333333" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment__artistas.xml" value="0.22083333333333333" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment_dashboard.xml" value="0.22083333333333333" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment_generos.xml" value="0.22083333333333333" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22083333333333333" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/menu/opciones.xml" value="0.25" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/menu/opciones_admin.xml" value="0.22" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/menu/opciones_usuarios.xml" value="0.25" />
       </map>
     </option>
   </component>

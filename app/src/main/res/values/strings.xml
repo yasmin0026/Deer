@@ -2,6 +2,38 @@
     <string name="app_name">Deer</string>
     <string name="title_activity_menu">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_generos">Generos</string>
+    <string name="title_artistas">Artistas</string>
+    <string name="title_iniciar_sesion">Iniciar sesión</string>
+    <string name="title_cerrar_sesion">Cerrar sesión</string>
+    <string name="title_admin_usuarios">Administradores</string>
+    <string name="title_admin_contenido">Administrar contenidos</string>
+    <string name="title_acerca">Acerca de</string>
+
+    <string-array name="list_generos">
+        <item>Africana</item>
+        <item>Árabe</item>
+        <item>Blues</item>
+        <item>Bollywood e India</item>
+        <item>Brasileña</item>
+        <item>Clásica</item>
+        <item>Country</item>
+        <item>Cristiana y gospel</item>
+        <item>Electronica</item>
+        <item>Folk</item>
+        <item>Hip-Hop</item>
+        <item>Jazz</item>
+        <item>Latino</item>
+        <item>Metal</item>
+        <item>Pop</item>
+        <item>Pop latino</item>
+        <item>RyB</item>
+        <item>Rock</item>
+        <item>Reggae</item>
+        <item>Soundtracks</item>
+        <item>Tropical</item>
+        <item>Urbano</item>
+        <item>Romance</item>
+        <item>Fiesta</item>
+    </string-array>
 </resources>

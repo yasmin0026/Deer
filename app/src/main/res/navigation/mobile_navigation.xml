@@ -12,14 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="sv.edu.usam.deer.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/navigation_generos"
+        android:name="sv.edu.usam.deer.ui.generos.GenerosFragment"
+        android:label="generos_fragment"
+        tools:layout="@layout/fragment_generos" />
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="sv.edu.usam.deer.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_artistas"
+        android:name="sv.edu.usam.deer.ui.artistas.Artistas_Fragment"
+        android:label="fragment_artistas"
+        tools:layout="@layout/fragment_artistas" />
 </navigation>
