@@ -30,7 +30,7 @@ import sv.edu.usam.deer.ui.home.HomeFragment;
 public class IniciarSesion extends AppCompatActivity {
     EditText usuario,password, id_rol;
     Button btnLogin;
-    String id;
+    int id=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class IniciarSesion extends AppCompatActivity {
 
         usuario = findViewById(R.id.edtUsuario);
         password = findViewById(R.id.edtPass);
-       
+
         btnLogin = findViewById(R.id.btnLogin);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -52,35 +52,37 @@ public class IniciarSesion extends AppCompatActivity {
     }
 
 
-    private void loguearUser(String URL) {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+    public void loguearUser(String url){
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
-            public void onResponse(String response) {
-                if(!response.isEmpty()){
-                    Intent intent = new Intent(getApplicationContext(), MenuNavegacion.class);
-                    startActivity(intent);
+            public void onResponse(JSONArray response) {
+                JSONObject jsonObject = null;
+                for (int i = 0; i < response.length(); i++) {
+                    try {
+                        jsonObject = response.getJSONObject(i);
+                        usuario.setText(jsonObject.getString("usuario"));
+                        password.setText(jsonObject.getString("clave"));
+                        id = Integer.parseInt(jsonObject.getString("id_rol"));
 
-                }else{
-                    Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrecto", Toast.LENGTH_LONG).show();
+                    } catch (JSONException e) {
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG);
+                    }
                 }
+                Intent intent = new Intent(getApplicationContext(), MenuNavegacion.class);
+                intent.putExtra("id_rol", id);
+                startActivity(intent);
+                finish();
+
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(),error.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrectos", Toast.LENGTH_LONG).show();
             }
-        }){
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> parametros = new HashMap<String, String>();
-                parametros.put("usuario",usuario.getText().toString());
-                parametros.put("clave",password.getText().toString());
+        });
 
-                return parametros;
-            }
-        };
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+        requestQueue.add(jsonArrayRequest);
     }
 
     /*-----------------------------------------------------------------*/

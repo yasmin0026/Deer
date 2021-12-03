@@ -18,7 +18,7 @@ import sv.edu.usam.deer.databinding.ActivityMenuBinding;
 
 public class MenuNavegacion extends AppCompatActivity {
 
-    String id;
+    int id;
 
     private ActivityMenuBinding binding;
 
@@ -39,17 +39,15 @@ public class MenuNavegacion extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-      /*  if(savedInstanceState == null){
+        if(savedInstanceState == null){
             Bundle extra = getIntent().getExtras();
-            if(extra == null){
-                Toast.makeText(this, "Sin rol",  Toast.LENGTH_LONG).show();
-            }else{
-                id = extra.getString("id_rol");
+            if(!(extra == null)){
+                id = extra.getInt("id_rol");
             }
 
         }else {
-            id = (String) savedInstanceState.getSerializable("id_rol");
-        }*/
+            id = (int) savedInstanceState.getSerializable("id_rol");
+        }
 
 /*----------------------------------------------------------------*/
     }
@@ -57,18 +55,16 @@ public class MenuNavegacion extends AppCompatActivity {
     //Menu de opciones (no es el Navegation Bottom)
     public boolean onCreateOptionsMenu(Menu menu){
 
-       /* if(id.equals("1")){
+       if(id == 1){
             getMenuInflater().inflate(R.menu.opciones_admin, menu);
             return true;
-        }else if(id.equals("2")){
+        }else if(id == 2 ){
             getMenuInflater().inflate(R.menu.opciones_usuarios, menu);
             return true;
-
-        }*/
-
-        getMenuInflater().inflate(R.menu.opciones, menu);
-        return true;
-
+        }else {
+           getMenuInflater().inflate(R.menu.opciones, menu);
+           return true;
+       }
     }
 
     //crear las opciones cada propiedad del menu
@@ -79,6 +75,9 @@ public class MenuNavegacion extends AppCompatActivity {
             case R.id.iniciar_sesion:
                 viewSingIn();
                 return true;
+            case R.id.cerrar_sesion:
+                logOut();
+                finish();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -86,9 +85,17 @@ public class MenuNavegacion extends AppCompatActivity {
         //return super.onOptionsItemSelected(item);
     }
 
+
+
     public void viewSingIn(){
         Intent intent = new Intent(getApplicationContext(), IniciarSesion.class);
         startActivity(intent);
+    }
+
+    public void logOut(){
+        Intent intent = new Intent(getApplicationContext(), MenuNavegacion.class);
+        startActivity(intent);
+
     }
 
 
