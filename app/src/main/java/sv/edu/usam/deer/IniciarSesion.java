@@ -39,7 +39,7 @@ public class IniciarSesion extends AppCompatActivity {
 
         usuario = findViewById(R.id.edtUsuario);
         password = findViewById(R.id.edtPass);
-        id_rol = findViewById(R.id.edtId_rol);
+       
         btnLogin = findViewById(R.id.btnLogin);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
