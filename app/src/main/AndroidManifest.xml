@@ -7,14 +7,17 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_deer_squared"
+        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_deer_rounded"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deer">
+        <activity android:name=".IniciarSesion"></activity>
         <activity
             android:name=".MenuNavegacion"
-            android:label="@string/title_activity_menu"></activity>
-        <activity android:name=".MainActivity"
+            android:label="@string/title_activity_menu" />
+        <activity
+            android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
