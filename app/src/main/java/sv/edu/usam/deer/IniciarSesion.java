@@ -71,7 +71,7 @@ public class IniciarSesion extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), MenuNavegacion.class);
                 intent.putExtra("id_rol", id);
                 startActivity(intent);
-                finish();
+
 
             }
         }, new Response.ErrorListener() {
@@ -86,4 +86,5 @@ public class IniciarSesion extends AppCompatActivity {
     }
 
     /*-----------------------------------------------------------------*/
+
 }

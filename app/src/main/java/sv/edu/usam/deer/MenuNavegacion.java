@@ -77,7 +77,6 @@ public class MenuNavegacion extends AppCompatActivity {
                 return true;
             case R.id.cerrar_sesion:
                 logOut();
-                finish();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -98,6 +97,10 @@ public class MenuNavegacion extends AppCompatActivity {
 
     }
 
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
 
-/*------------------------------------------------------------------------------------*/
+
+    /*------------------------------------------------------------------------------------*/
 }
