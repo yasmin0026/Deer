@@ -7,12 +7,27 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon_deer_squared"
-        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_deer_rounded"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Deer">
-        <activity android:name=".IniciarSesion"></activity>
+        android:theme="@style/Theme.Deer"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".EditarContenidoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetalleContenidoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AgregarContenidoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Contenido_AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ContenidoAdmin.AgregarContenidoActivity"
+            android:exported="true" />
+        <activity android:name=".IniciarSesion" />
         <activity
             android:name=".MenuNavegacion"
             android:label="@string/title_activity_menu" />

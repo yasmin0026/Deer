@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/drawable/circle.xml" value="0.2203125" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_agregar_contenido.xml" value="0.25" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_contenido_admin.xml" value="0.20416666666666666" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_detalle_contenido.xml" value="0.25" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_editar_contenido.xml" value="0.192481884057971" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_menu.xml" value="0.15489130434782608" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/custom_list_item.xml" value="0.25" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/menu/opciones_admin.xml" value="0.20416666666666666" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/drawable/ic_acerca_de.xml" value="0.23697916666666666" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/drawable/ic_admin_contenido.xml" value="0.19814814814814816" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/drawable/ic_admin_usuarios.xml" value="0.19814814814814816" />

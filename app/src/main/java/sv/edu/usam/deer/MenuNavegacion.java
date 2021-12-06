@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -77,6 +76,9 @@ public class MenuNavegacion extends AppCompatActivity {
                 return true;
             case R.id.cerrar_sesion:
                 logOut();
+            //prueba
+            case R.id.admin_contenido:
+            startActivity(new Intent(getApplicationContext(), Contenido_AdminActivity.class));
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -103,4 +105,5 @@ public class MenuNavegacion extends AppCompatActivity {
 
 
     /*------------------------------------------------------------------------------------*/
+
 }

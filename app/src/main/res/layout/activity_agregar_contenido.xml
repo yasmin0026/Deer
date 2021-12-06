@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarContenidoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:text="Agregar Contenido"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#673AB7"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtcancion"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:drawableLeft="@drawable/ic_iniciar_sesion"
+            android:ems="10"
+            android:hint="   Nombre de cancion"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:textColor="#673AB7" />
+
+        <EditText
+            android:id="@+id/edtArtista"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@drawable/ic_artistas"
+            android:ems="10"
+            android:hint="  Artista"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edtAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@drawable/ic_generos"
+            android:ems="10"
+            android:hint="  Album"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/edtGenero"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:entries="@array/list_generos" />
+
+        <EditText
+            android:id="@+id/edtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:ems="10"
+            android:hint=" Fecha de lanzamiento"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtLink"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@drawable/ic_artistas"
+            android:ems="10"
+            android:hint="  Link de video"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtPortada"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableLeft="@drawable/ic_generos"
+            android:ems="10"
+            android:hint="Portada"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_200"
+            android:text="Insertar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
