@@ -6,100 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".EditarContenidoActivity">
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="63dp"
-            android:text="Editar Contenido"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="#673AB7"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/edtid2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:padding="5dp"
-            android:text="ID:"
-            android:textAlignment="viewStart" />
-
-        <EditText
-            android:id="@+id/edtcancion2"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:drawableLeft="@drawable/ic_iniciar_sesion"
-            android:editable="false"
-            android:ems="10"
-            android:hint="   Nombre de cancion"
-            android:inputType="textPersonName"
-            android:singleLine="false"
-             />
-
-        <EditText
-            android:id="@+id/edtArtista2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:drawableLeft="@drawable/ic_artistas"
-            android:ems="10"
-            android:hint="  Artista"
-            android:inputType="textPersonName"
-            android:padding="10dp" />
-
-        <EditText
-            android:id="@+id/edtAlbum2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:drawableLeft="@drawable/ic_generos"
-            android:ems="10"
-            android:hint="  Album"
-            android:inputType="textPersonName" />
-
-        <Spinner
-            android:id="@+id/edtGenero2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:entries="@array/list_generos" />
-
-        <EditText
-            android:id="@+id/edtFecha2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
-            android:ems="10"
-            android:hint=" Fecha de lanzamiento"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/edtLink2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:drawableLeft="@drawable/ic_artistas"
-            android:ems="10"
-            android:hint="  Link de video"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/edtPortada2"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:drawableLeft="@drawable/ic_generos"
-            android:ems="10"
-            android:hint="Portada"
-            android:inputType="textPersonName" />
-
-        <Button
-            android:id="@+id/btnActualizar"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/purple_200"
-            android:onClick="btn_edit"
-            android:text="Actualizar" />
-    </LinearLayout>
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:text="Editar Contenido"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#673AB7"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/edtid2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:paddingLeft="7dp"
+                android:text="ID: "
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                app:drawableTint="#673AB7" />
+
+            <EditText
+                android:id="@+id/edtcancion2"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableLeft="@drawable/ic_iniciar_sesion"
+                android:editable="false"
+                android:ems="10"
+                android:hint="   Nombre de cancion"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                />
+
+            <EditText
+                android:id="@+id/edtArtista2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableLeft="@drawable/ic_artistas"
+                android:ems="10"
+                android:hint="  Artista"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edtAlbum2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableLeft="@drawable/ic_generos"
+                android:ems="10"
+                android:hint="  Album"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/edtGenero2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:entries="@array/list_generos" />
+
+            <EditText
+                android:id="@+id/edtFecha2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:ems="10"
+                android:hint=" Fecha de lanzamiento"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtLink2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableLeft="@drawable/ic_artistas"
+                android:ems="10"
+                android:hint="  Link de video"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtPortada2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableLeft="@drawable/ic_generos"
+                android:ems="10"
+                android:hint="Portada"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_200"
+                android:onClick="btn_edit"
+                android:text="Actualizar" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

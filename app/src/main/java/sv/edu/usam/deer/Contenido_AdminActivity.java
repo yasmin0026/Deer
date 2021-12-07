@@ -55,6 +55,7 @@ public class Contenido_AdminActivity extends AppCompatActivity {
         retrieveData();
 
 
+
         //muestra las opciones(ver detalles, editar y eliminar)
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -186,7 +187,6 @@ public class Contenido_AdminActivity extends AppCompatActivity {
                                 }
 
 
-
                             }
 
 
@@ -224,7 +224,10 @@ public class Contenido_AdminActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() { moveTaskToBack(true); }
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 
 
 }

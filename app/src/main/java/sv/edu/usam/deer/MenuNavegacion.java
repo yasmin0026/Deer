@@ -71,16 +71,20 @@ public class MenuNavegacion extends AppCompatActivity {
         //
         int idMenu = item.getItemId();
         switch(idMenu){
+
             case R.id.iniciar_sesion:
                 viewSingIn();
                 return true;
+
             case R.id.cerrar_sesion:
                 logOut();
-            //prueba
-            case R.id.admin_contenido:
-            startActivity(new Intent(getApplicationContext(), Contenido_AdminActivity.class));
+
             default:
                 return super.onOptionsItemSelected(item);
+
+            case R.id.admin_contenido:
+                contenido();
+                return true;
         }
 
         //return super.onOptionsItemSelected(item);
@@ -97,6 +101,10 @@ public class MenuNavegacion extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MenuNavegacion.class);
         startActivity(intent);
 
+    }
+
+    public void contenido(){
+        startActivity(new Intent(getApplicationContext(), Contenido_AdminActivity.class));
     }
 
     public void onBackPressed() {

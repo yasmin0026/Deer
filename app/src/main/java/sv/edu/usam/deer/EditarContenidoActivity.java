@@ -7,6 +7,7 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -60,6 +61,9 @@ public class EditarContenidoActivity extends AppCompatActivity {
         link = findViewById(R.id.edtLink2);
         portadas = findViewById(R.id.edtPortada2);
         btnEdit = findViewById(R.id.btnActualizar);
+
+        //Back Arrow
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
         position = intent.getExtras().getInt("position");
@@ -165,9 +169,14 @@ public class EditarContenidoActivity extends AppCompatActivity {
         return null;
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finish();
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
+
+
 }

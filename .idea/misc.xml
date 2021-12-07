@@ -5,7 +5,7 @@
       <map>
         <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/drawable/circle.xml" value="0.2203125" />
         <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_agregar_contenido.xml" value="0.25" />
-        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_contenido_admin.xml" value="0.20416666666666666" />
+        <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_contenido_admin.xml" value="0.18" />
         <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_detalle_contenido.xml" value="0.25" />
         <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_editar_contenido.xml" value="0.25" />
         <entry key="..\:/ProyectosAndroid/Deer/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -33,5 +33,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.20416666666666666" />
+      </ProjectState>
+    </option>
   </component>
 </project>
