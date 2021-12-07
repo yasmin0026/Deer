@@ -97,7 +97,7 @@ public class EditarContenidoActivity extends AppCompatActivity {
         progressDialog.setMessage("Cargando....");
         progressDialog.show();
 
-        StringRequest request = new StringRequest(Request.Method.POST, "https://proyectoappvideo.000webhostapp.com/crud/editar.php",
+        StringRequest request = new StringRequest(Request.Method.POST, "https://deervideo2021.000webhostapp.com/crud/editar.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

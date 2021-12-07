@@ -37,7 +37,7 @@ public class Contenido_AdminActivity extends AppCompatActivity {
     Adaptador adapter;
     public static ArrayList<Contenido> contList = new ArrayList<>();
 
-    String url = "https://proyectoappvideo.000webhostapp.com/crud/mostrar.php";
+    String url = "https://deervideo2021.000webhostapp.com/crud/mostrar.php";
     Contenido contenido;
     private SearchView searchViewBuscar;
 
@@ -111,7 +111,7 @@ public class Contenido_AdminActivity extends AppCompatActivity {
     private void deleteData(final String id_contenido) {
 
 
-        StringRequest request = new StringRequest(Request.Method.POST, "https://proyectoappvideo.000webhostapp.com/crud/eliminar.php",
+        StringRequest request = new StringRequest(Request.Method.POST, "https://deervideo2021.000webhostapp.com/crud/eliminar.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
