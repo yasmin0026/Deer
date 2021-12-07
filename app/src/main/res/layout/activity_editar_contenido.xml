@@ -28,7 +28,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/edtid2"
+                android:id="@+id/edtid"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
 
@@ -39,7 +39,7 @@
                 app:drawableTint="#673AB7" />
 
             <EditText
-                android:id="@+id/edtcancion2"
+                android:id="@+id/edtnombres"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:drawableLeft="@drawable/ic_iniciar_sesion"
@@ -51,7 +51,7 @@
                 />
 
             <EditText
-                android:id="@+id/edtArtista2"
+                android:id="@+id/edtApellidos"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:drawableLeft="@drawable/ic_artistas"
@@ -61,7 +61,7 @@
                 android:padding="10dp" />
 
             <EditText
-                android:id="@+id/edtAlbum2"
+                android:id="@+id/edtUsuariouseradd"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:drawableLeft="@drawable/ic_generos"
@@ -76,7 +76,7 @@
                 android:entries="@array/list_generos" />
 
             <EditText
-                android:id="@+id/edtFecha2"
+                android:id="@+id/edtClave"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:drawableLeft="@android:drawable/ic_menu_my_calendar"
@@ -85,7 +85,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/edtLink2"
+                android:id="@+id/edtId_rol"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:drawableLeft="@drawable/ic_artistas"
@@ -103,7 +103,7 @@
                 android:inputType="textPersonName" />
 
             <Button
-                android:id="@+id/btnActualizar"
+                android:id="@+id/btnAgregarUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/purple_200"

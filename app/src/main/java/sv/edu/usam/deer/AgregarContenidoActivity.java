@@ -50,7 +50,7 @@ public class AgregarContenidoActivity extends AppCompatActivity {
         edtAlbum  = findViewById(R.id.edtAlbum);
         edtGenero  = findViewById(R.id.edtGenero);
         edtFecha  = findViewById(R.id.edtFecha);
-        btn_insert = findViewById(R.id.btnActualizar);
+        btn_insert = findViewById(R.id.btnAgregarUser);
         edtLink = findViewById(R.id.edtLink);
         edtPortada = findViewById(R.id.edtPortada);
 

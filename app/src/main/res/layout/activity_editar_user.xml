@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgregarContenidoActivity">
+    tools:context=".EditarContenidoActivity">
 
 
     <ScrollView
@@ -20,74 +20,70 @@
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="67dp"
-                android:text="Agregar Contenido"
+                android:layout_height="59dp"
+                android:text="Editar Usuario"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#673AB7"
                 android:textSize="20sp" />
 
-            <EditText
-                android:id="@+id/edtcancion"
+            <TextView
+                android:id="@+id/edtid"
                 android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:drawableLeft="@drawable/ic_iniciar_sesion"
-                android:ems="10"
-                android:hint="   Nombre de cancion"
-                android:inputType="textPersonName"
-                android:singleLine="false"
-                />
+                android:layout_height="30dp"
+
+                android:paddingLeft="7dp"
+                android:text="ID: "
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                app:drawableTint="#673AB7" />
 
             <EditText
-                android:id="@+id/edtArtista"
+                android:id="@+id/edtnombres"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableLeft="@drawable/ic_artistas"
+                android:editable="false"
+                android:ems="10"
+                android:hint="   Nombres"
+                android:inputType="textPersonName"
+                android:singleLine="false" />
+
+            <EditText
+                android:id="@+id/edtApellidos"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:drawableLeft="@drawable/ic_artistas"
                 android:ems="10"
-                android:hint="  Artista"
+                android:hint="  Apellidos"
                 android:inputType="textPersonName"
                 android:padding="10dp" />
 
             <EditText
-                android:id="@+id/edtAlbum"
+                android:id="@+id/edtUsuariouseradd"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:drawableLeft="@drawable/ic_generos"
+                android:drawableLeft="@drawable/ic_iniciar_sesion"
                 android:ems="10"
-                android:hint="  Album"
-                android:inputType="textPersonName" />
-
-            <Spinner
-                android:id="@+id/edtGenero"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:entries="@array/list_generos" />
-
-            <EditText
-                android:id="@+id/edtFecha"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
-                android:ems="10"
-                android:hint=" Fecha de lanzamiento"
+                android:hint="  Usuario"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/edtLink"
+                android:id="@+id/edtClave"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:drawableLeft="@drawable/ic_artistas"
+                android:drawableLeft="@android:drawable/ic_menu_view"
                 android:ems="10"
-                android:hint="  Link de video"
+                android:hint=" Clave"
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/edtPortada"
+                android:id="@+id/edtId_rol"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:drawableLeft="@drawable/ic_generos"
+                android:drawableLeft="@android:drawable/ic_menu_manage"
                 android:ems="10"
-                android:hint="Portada"
+                android:hint="  Rol"
                 android:inputType="textPersonName" />
 
             <Button
@@ -95,9 +91,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/purple_200"
-                android:text="Insertar" />
-
-
+                android:onClick="btn_edit"
+                android:text="Actualizar" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

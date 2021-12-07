@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Deer"
         android:usesCleartextTraffic="true">
+        <activity android:name=".AgregarUser"></activity>
+        <activity android:name=".EditarUser" />
+        <activity android:name=".DetalleUser" />
+        <activity android:name=".ContenidoUserActivity" />
         <activity
             android:name=".EditarContenidoActivity"
             android:exported="true" />

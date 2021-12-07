@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:paddingStart="5dp"
-            android:text="Nombre Cancion:"
+            android:text="Nombres:"
             android:textAlignment="viewStart"
             android:textSize="16sp" />
 
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:paddingStart="5dp"
-            android:text="Artista:"
+            android:text="Apellidos:"
             android:textSize="16sp" />
 
         <TextView
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:paddingStart="5dp"
-            android:text="Album:"
+            android:text="Usuario:"
             android:textSize="16sp" />
 
         <TextView
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:paddingStart="5dp"
-            android:text="Genero:"
+            android:text="Clave:"
             android:textSize="16sp" />
 
         <TextView
@@ -68,23 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:paddingStart="5dp"
-            android:text="Fecha:"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/txtLink_video"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:paddingStart="5dp"
-            android:text="Link:"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/txtPortadas"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:paddingStart="5dp"
-            android:text="Portada:"
+            android:text="Rol:"
             android:textSize="16sp" />
 
     </LinearLayout>

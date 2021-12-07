@@ -12,14 +12,14 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-import sv.edu.usam.deer.Models.Contenido;
+import sv.edu.usam.deer.Models.ContenidoUser;
 import sv.edu.usam.deer.R;
 
-public class Adaptador extends ArrayAdapter<Contenido> {
+public class AdaptadorUser extends ArrayAdapter<ContenidoUser> {
     Context context;
-    List<Contenido> arrayListEmployee;
+    List<ContenidoUser> arrayListEmployee;
 
-    public Adaptador(@NonNull Context context, List<Contenido> arrayListEmployee) {
+    public AdaptadorUser(@NonNull Context context, List<ContenidoUser> arrayListEmployee) {
         super(context, R.layout.custom_list_item ,arrayListEmployee);
 
         this.context = context;
@@ -36,9 +36,9 @@ public class Adaptador extends ArrayAdapter<Contenido> {
         TextView tvName = view.findViewById(R.id.txtUsuario);
         TextView tvCanc = view.findViewById(R.id.txtNombres);
 
-        tvID.setText(arrayListEmployee.get(position).getId_contenido());
-        tvName.setText(arrayListEmployee.get(position).getArtista());
-        tvCanc.setText(arrayListEmployee.get(position).getNombre_cancion());
+        tvID.setText(arrayListEmployee.get(position).getId());
+        tvName.setText(arrayListEmployee.get(position).getUsuario());
+        tvCanc.setText(arrayListEmployee.get(position).getNombres());
 
         return view;
 

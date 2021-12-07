@@ -85,6 +85,10 @@ public class MenuNavegacion extends AppCompatActivity {
             case R.id.admin_contenido:
                 contenido();
                 return true;
+
+            case R.id.admin_usuarios:
+                contenidoUser();
+                return true;
         }
 
         //return super.onOptionsItemSelected(item);
@@ -105,6 +109,10 @@ public class MenuNavegacion extends AppCompatActivity {
 
     public void contenido(){
         startActivity(new Intent(getApplicationContext(), Contenido_AdminActivity.class));
+    }
+
+    public void contenidoUser(){
+        startActivity(new Intent(getApplicationContext(), ContenidoUserActivity.class));
     }
 
     public void onBackPressed() {

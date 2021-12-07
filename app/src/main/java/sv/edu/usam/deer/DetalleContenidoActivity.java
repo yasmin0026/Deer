@@ -15,12 +15,12 @@ public class DetalleContenidoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_contenido);
 
-        txtid = findViewById(R.id.txtid_contenido);
-        txtnomCancion = findViewById(R.id.txtCancion);
-        txtartistas = findViewById(R.id.txtArtistas);
-        txtalbums = findViewById(R.id.txtAlbums);
-        txtGen = findViewById(R.id.txtGen);
-        txtFecha_lanzamiento = findViewById(R.id.txtFecha_lanzamiento);
+        txtid = findViewById(R.id.txtid);
+        txtnomCancion = findViewById(R.id.txtNombres);
+        txtartistas = findViewById(R.id.txtApellidos);
+        txtalbums = findViewById(R.id.txtUserNick);
+        txtGen = findViewById(R.id.txtClave);
+        txtFecha_lanzamiento = findViewById(R.id.txtId_rol);
         txtLink_video = findViewById(R.id.txtLink_video);
         txtPortadas = findViewById(R.id.txtPortadas);
 

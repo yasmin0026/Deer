@@ -52,15 +52,15 @@ public class EditarContenidoActivity extends AppCompatActivity {
         sDayIni = c.get(Calendar.DAY_OF_MONTH);
         sYearIni = c.get(Calendar.YEAR);
 
-        id = findViewById(R.id.edtid2);
-        Cancion = findViewById(R.id.edtcancion2);
-        artistas = findViewById(R.id.edtArtista2);
-        albums = findViewById(R.id.edtAlbum2);
+        id = findViewById(R.id.edtid);
+        Cancion = findViewById(R.id.edtnombres);
+        artistas = findViewById(R.id.edtApellidos);
+        albums = findViewById(R.id.edtUsuariouseradd);
         generos = findViewById(R.id.edtGenero2);
-        fechas = findViewById(R.id.edtFecha2);
-        link = findViewById(R.id.edtLink2);
+        fechas = findViewById(R.id.edtClave);
+        link = findViewById(R.id.edtId_rol);
         portadas = findViewById(R.id.edtPortada2);
-        btnEdit = findViewById(R.id.btnActualizar);
+        btnEdit = findViewById(R.id.btnAgregarUser);
 
         //Back Arrow
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
