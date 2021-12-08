@@ -89,6 +89,10 @@ public class MenuNavegacion extends AppCompatActivity {
             case R.id.admin_usuarios:
                 contenidoUser();
                 return true;
+
+            case R.id.acerca_de:
+                acercade();
+                return true;
         }
 
         //return super.onOptionsItemSelected(item);
@@ -113,6 +117,10 @@ public class MenuNavegacion extends AppCompatActivity {
 
     public void contenidoUser(){
         startActivity(new Intent(getApplicationContext(), ContenidoUserActivity.class));
+    }
+
+    public void acercade() {
+        startActivity(new Intent(getApplicationContext(), Acercade.class));
     }
 
     public void onBackPressed() {

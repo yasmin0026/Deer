@@ -14,11 +14,11 @@
     <fragment
         android:id="@+id/navigation_generos"
         android:name="sv.edu.usam.deer.ui.generos.GenerosFragment"
-        android:label="generos_fragment"
+        android:label="@string/title_generos"
         tools:layout="@layout/fragment_generos" />
     <fragment
         android:id="@+id/navigation_artistas"
         android:name="sv.edu.usam.deer.ui.artistas.Artistas_Fragment"
-        android:label="fragment_artistas"
+        android:label="@string/title_artistas"
         tools:layout="@layout/fragment_artistas" />
 </navigation>

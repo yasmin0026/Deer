@@ -12,7 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Deer"
         android:usesCleartextTraffic="true">
-        <activity android:name=".AgregarUser"></activity>
+        <activity
+            android:name=".Acercade"
+            android:parentActivityName=".MenuNavegacion">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacion" />
+        </activity>
+
+        <activity
+            android:name=".AlbumsByArtista"
+            android:parentActivityName=".MenuNavegacion">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacion" />
+        </activity>
+        <activity
+            android:name=".AlbumContenido"
+            android:parentActivityName=".MenuNavegacion">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacion" />
+        </activity>
+        <activity
+            android:name=".VideoContenido"
+            android:parentActivityName=".MenuNavegacion">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuNavegacion" />
+        </activity>
+        <activity android:name=".AgregarUser" />
         <activity android:name=".EditarUser" />
         <activity android:name=".DetalleUser" />
         <activity android:name=".ContenidoUserActivity" />
@@ -27,9 +56,6 @@
             android:exported="true" />
         <activity
             android:name=".Contenido_AdminActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ContenidoAdmin.AgregarContenidoActivity"
             android:exported="true" />
         <activity android:name=".IniciarSesion" />
         <activity
