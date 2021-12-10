@@ -93,6 +93,9 @@ public class MenuNavegacion extends AppCompatActivity {
             case R.id.acerca_de:
                 acercade();
                 return true;
+            case R.id.buscador:
+                buscador();
+                return true;
         }
 
         //return super.onOptionsItemSelected(item);
@@ -121,6 +124,10 @@ public class MenuNavegacion extends AppCompatActivity {
 
     public void acercade() {
         startActivity(new Intent(getApplicationContext(), Acercade.class));
+    }
+
+    public void buscador() {
+        startActivity(new Intent(getApplicationContext(), Busqueda.class));
     }
 
     public void onBackPressed() {
