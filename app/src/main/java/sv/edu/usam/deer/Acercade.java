@@ -3,6 +3,7 @@ package sv.edu.usam.deer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 public class Acercade extends AppCompatActivity {
@@ -16,5 +17,7 @@ public class Acercade extends AppCompatActivity {
 
         vista = findViewById(R.id.infor_app);
         vista.loadUrl("https://deervideo2021.000webhostapp.com/Deer_API/acercade/acercade.php");
+        WebSettings webSettings = vista.getSettings();
+        webSettings.setJavaScriptEnabled(true);
     }
 }

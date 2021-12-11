@@ -30,13 +30,16 @@
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_acercade.xml" value="0.22083333333333333" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_album_contenido.xml" value="0.33" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_albums_by_artista.xml" value="0.22083333333333333" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_busqueda.xml" value="0.22" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_menu.xml" value="0.25" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/activity_video_contenido.xml" value="0.22083333333333333" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment__artistas.xml" value="0.22083333333333333" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment_artistas.xml" value="0.21743589743589745" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment_dashboard.xml" value="0.22083333333333333" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment_generos.xml" value="0.22083333333333333" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/fragment_home.xml" value="0.21" />
+        <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/item_all_artistas.xml" value="0.21743589743589745" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/item_simple_canciones.xml" value="0.22083333333333333" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/layout/item_video_contenido.xml" value="0.22083333333333333" />
         <entry key="..\:/Proyectos_android/Deer/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22083333333333333" />

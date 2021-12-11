@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Deer"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Busqueda"
+            android:exported="false" />
+        <activity
             android:name=".Acercade"
             android:parentActivityName=".MenuNavegacion">
             <meta-data

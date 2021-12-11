@@ -5,9 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.artistas.Artistas_Fragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAllArtistas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Artistas" />
-
+        android:layout_height="match_parent" />
 </FrameLayout>
