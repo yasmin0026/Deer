@@ -57,7 +57,7 @@ public class ContenidosAdapter extends RecyclerView.Adapter<ContenidosAdapter.Co
             super(itemView);
 
             imPortada = itemView.findViewById(R.id.imvPortada);
-            txtTitulo = itemView.findViewById(R.id.tvTitulo);
+            txtTitulo = itemView.findViewById(R.id.tvGene);
             txtArtista = itemView.findViewById(R.id.tvArtista);
 
             itemView.setOnClickListener(new View.OnClickListener() {

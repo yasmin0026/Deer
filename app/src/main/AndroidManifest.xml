@@ -19,7 +19,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuNavegacion" />
         </activity>
-
         <activity
             android:name=".AlbumsByArtista"
             android:parentActivityName=".MenuNavegacion">
